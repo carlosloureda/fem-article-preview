@@ -14,8 +14,8 @@
 </head>
 <body>
   <article class="article-preview">
-    <div class="article-preview__thumbnail">
-      <img src="./images/drawers.jpg" alt="A drawer with some decoration">
+    <div class="article-preview__side">
+      <img class="article-preview__thumbnail" src="./images/drawers.jpg" alt="A drawer with some decoration">
     </div>
     <div class="article-preview__detail">
       <h2 class="article-preview__title">
@@ -25,12 +25,17 @@
         Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.
       </p>
       <div class="article-preview__author-box">
-        <img src="./images/avatar-michelle.jpg" alt="user avatar">
         <div class="article-preview__author-detail">
-          <h3>Michell Appleton</h3>
-          <p>28 Jun 2020</p>
+          <img src="./images/avatar-michelle.jpg" class="article-preview__author-avatar" alt="user avatar">
+          <div class="article-preview__author-info">
+            <h3 class="article-preview__author-name">Michelle Appleton</h3>
+            <p>28 Jun 2020</p>
+          </div>
         </div>
-        <div>Share icon</div>
+        <div class="article-preview__share">
+          <img src="./images/icon-share.svg" alt="Arrow icon for sharing">
+          
+        </div>
       </div> 
     </div>
   </article>

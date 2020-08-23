@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <div class="section">
+           <div class="left">Left</div>
+           <div class="right">Right</div>
+       </div>
+</body>
+</html>
+
+<style>
+    *, *::after, *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+    }
+
+    html {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    .section {
+        display: flex;
+        flex-direction: row;
+        width: 800px;
+    }
+    .left {
+        background-color: red;
+        width:300px;
+    }
+    .right{
+        background-color: blue;
+        width: 100%;
+    }
+</style>
