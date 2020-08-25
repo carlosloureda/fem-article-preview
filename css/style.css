@@ -4,6 +4,7 @@
     --letter-primary-color: #48556A;
     --letter-secondary-color: #6E8098;
     --letter-info-color: #9DAEC2;
+    --fill-bg-color: #979797;
  }
 
 *, *::after, *::before {
@@ -109,4 +110,37 @@ body{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    position: relative;
+}
+
+.article-preview__share-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    align-items: center;
+    position: absolute;
+    top: -7.8rem;
+    width: 24.8rem;
+    height: 5.5rem;
+    background-color: var(--letter-primary-color);
+    color: var(--letter-info-color);
+    text-transform: uppercase;
+    border-radius: 1rem;
+    letter-spacing: 0.5rem;
+}
+.article-preview__share-content::after {
+    content: '';
+    font-size: 0; 
+    line-height: 0%; 
+    width: 0px;
+    border-top: 12px solid var(--letter-primary-color);
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    position: absolute;
+    bottom: -1.2rem;
+    left: 45%;
+}
+
+.hidden {
+    display: none;
 }
