@@ -1,21 +1,20 @@
-
-
 function addEventListeners() {
-    onShareClickListener();
+  onShareClickListener();
 }
 
 function onShareClickListener() {
-   Array.from(document.querySelectorAll('.js-open-share-options')).map(el => {
-       el.addEventListener('click', e => {
-            e.preventDefault();
-            document.querySelector('.article-preview__share-content').classList.toggle('hidden')
-        });
-   })
-   
+  Array.from(document.querySelectorAll(".js-open-share-options")).map((el) => {
+    el.addEventListener("click", (e) => {
+      e.preventDefault();
+      document
+        .querySelector(".article-preview__share-content")
+        .classList.toggle("hidden");
+    });
+  });
 }
 
 function init() {
-    addEventListeners();
+  addEventListeners();
 }
 
 init();
