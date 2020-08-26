@@ -7,7 +7,7 @@ function onShareClickListener() {
     el.addEventListener("click", (e) => {
       e.preventDefault();
       document
-        .querySelector(".article-preview__share-content")
+        .querySelector(".article-preview__share")
         .classList.toggle("hidden");
     });
   });
