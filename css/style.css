@@ -108,6 +108,7 @@ body {
 .article-preview__share-btn {
   background-color: var(--main-bg-color);
   border-radius: 50%;
+  border: none;
   width: 3.2rem;
   height: 3.2rem;
   display: flex;
@@ -115,6 +116,38 @@ body {
   align-items: center;
   cursor: pointer;
   position: relative;
+}
+
+.btn {
+  outline: none;
+}
+
+.article-preview__share {
+  animation: moveInBottom 0.5s ease-in-out;
+  /* applies the 0% initial  */
+  animation-fill-mode: backwards;
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.6rem;
+}
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .article-preview__share {
@@ -157,6 +190,20 @@ body {
 
 .hidden {
   display: none;
+}
+
+@keyframes moveInBottom {
+  /* start */
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+
+  /* end */
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 @media all and (max-width: 744px) {
@@ -207,6 +254,7 @@ body {
   .article-preview__share-btn--mobile {
     background-color: var(--letter-secondary-color);
     border-radius: 50%;
+    border: none;
     width: 3.2rem;
     height: 3.2rem;
     display: flex;
