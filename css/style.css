@@ -80,7 +80,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
   position: relative;
 }
 
@@ -117,6 +117,10 @@ body {
   align-items: center;
   cursor: pointer;
   position: relative;
+}
+
+.article-preview__author-box {
+  margin-top: 2rem;
 }
 
 .btn {
